@@ -1,0 +1,134 @@
+
+.tbtn {
+    -fx-background-color:#f1c40f;
+    -fx-text-fill: #1e272e;
+}
+.tbtn:selected{
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill:  #121212;
+
+}
+.tbtn:selected.glyph-icon{
+    -fx-fill:  #3498db;
+
+}
+.button{
+    -fx-background-color: #2c3e50;
+}
+.background{
+    -fx-background-color: #121212;
+}
+.button-one:hover{
+    -fx-background-color: #ecf0f1;
+}
+.anchor{
+    -fx-background-color:  #f8f6ee;
+}
+.buttonClear{
+    -fx-background-color: #00b894;
+}
+.buttonAdd{
+    -fx-background-color: #00b894;
+}
+.buttonUpdate{
+    -fx-background-color: #f39c12;
+}
+.buttonDelete{
+    -fx-background-color:  #d63031;
+}
+.Helper {
+    -fx-background-color:#00b894 ;
+    -fx-text-fill: #1e272e;
+}
+.Helper:selected {
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: #121212;
+}
+.backAdmin{
+    -fx-background-color: #00b894;
+}
+.backHelper{
+    -fx-background-color:#f39c12;
+}
+.buttonFx{
+    -fx-opacity: 200;
+    -fx-background-color:  #f5f6fa;
+
+}
+.buttonaa{
+    -fx-background-radius: 25;
+    -fx-background-color: #ffffff;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 2em; /* 12 */
+    -fx-text-fill: black;
+}
+
+
+.tBtn{
+    -fx-background-color: rgba(205, 205, 205,0.5);
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+}
+.tBtn:pressed {
+    -fx-background-color: rgba(236, 204, 104,1.0);
+    -fx-text-fill: white;
+}
+
+.table-view:focused{
+    -fx-background-insets: 0px;
+}
+
+
+.table-view .column-header{
+    -fx-size:25px;
+    -fx-background-color: #287be7;
+    -fx-font-size: 18;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill:  #f8f6ee;
+}
+
+.table-view .table-row-cell:empty{
+    -fx-background-color:  #f8f6ee;
+
+}
+
+.table-view .table-row-cell:selected{
+-fx-background-color:linear-gradient(to right, rgba(119, 8, 245, 0.29), rgba(15, 93, 255, 0.39));
+
+
+
+}
+.table-view .table-row-cell:selected *{
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+    -fx-text-fill: rgb(54, 49, 49);
+
+}
+
+.jfx-text-field{
+    -fx-prompt-text-fill: white;
+    -fx-font-size: 18;
+    -fx-font-family: "Roboto Black";
+    -fx-text-fill: white;
+}
+.jfx-combo-box{
+    -fx-prompt-text-fill:white;
+    -fx-font-size: 18;
+    -fx-font-family: "Roboto Black";
+
+}
+.jfx-combo-box .list-cell:filled:selected .text{
+    -fx-fill: white;
+}
+.jfx-combo-box .choice-box{
+    -fx-backgroundcolor: #ADD8E6;
+    -fx-focus-color: midnightblue;
+    -fx-faint-focus-color: #ADD8E6;
+    -fx-control-inner-background: #ADD8E6;
+    -fx-selection-bar: midnightblue;
+}
+.choice-box .menu-item:focused .label{
+    -fx-text-fill: white;
+}

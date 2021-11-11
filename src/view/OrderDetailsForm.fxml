@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextOrderDetails" prefHeight="676.0" prefWidth="1062.0" styleClass="anchor" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderDetailsFormController">
+   <children>
+      <ImageView fitHeight="676.0" fitWidth="1062.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/thomas-def-MfM3p2yn4Ew-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="69.0" layoutX="10.0" layoutY="8.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1041.0" />
+      <Label layoutX="377.0" layoutY="17.0" prefHeight="51.0" prefWidth="296.0" text="ATLAS WEAPON SHOP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="878.0" layoutY="80.0" prefHeight="40.0" prefWidth="62.0" text="Time :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="85.0" prefHeight="30.0" prefWidth="56.0" text="Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="70.0" layoutY="83.0" prefHeight="34.0" prefWidth="200.0" text="2021-September-15" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="945.0" layoutY="80.0" prefHeight="40.0" prefWidth="107.0" text="00:00:00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblOrderDetails" layoutX="9.0" layoutY="368.0" prefHeight="283.0" prefWidth="674.0">
+        <columns>
+          <TableColumn fx:id="colItemId" prefWidth="124.0" text="Item Id" />
+          <TableColumn fx:id="colItemName" prefWidth="197.0" text="Item Name" />
+            <TableColumn fx:id="colQuantity" prefWidth="172.0" text="Quantity" />
+            <TableColumn fx:id="colTotal" prefWidth="182.0" text="Total" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="129.0" layoutX="11.0" layoutY="151.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1041.0" />
+      <Label layoutX="447.0" layoutY="85.0" prefHeight="30.0" prefWidth="107.0" text="Order Id : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderId" layoutX="556.0" layoutY="88.0" prefHeight="27.0" prefWidth="83.0" text="O-001" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerName" focusColor="WHITE" labelFloat="true" layoutX="272.0" layoutY="192.0" onAction="#moveToCustomerAddress" prefHeight="35.0" prefWidth="170.0" promptText="Customer Name" unFocusColor="WHITE" />
+      <JFXComboBox fx:id="cmbCustomerId" focusColor="WHITE" labelFloat="true" layoutX="31.0" layoutY="192.0" prefHeight="35.0" prefWidth="170.0" promptText="Customer Id" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtCustomerLicenseNumber" focusColor="WHITE" labelFloat="true" layoutX="760.0" layoutY="192.0" prefHeight="35.0" prefWidth="263.0" promptText="Customer License Number" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtCustomerAddress" focusColor="WHITE" labelFloat="true" layoutX="522.0" layoutY="192.0" onAction="#moveToCustomerLicenseNumber" prefHeight="35.0" prefWidth="170.0" promptText="Customer Address" unFocusColor="WHITE" />
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="283.0" layoutX="694.0" layoutY="367.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="358.0" />
+      <JFXButton fx:id="btnConformOrder" buttonType="RAISED" contentDisplay="TOP" layoutX="774.0" layoutY="558.0" onAction="#conformOrderOnAction" prefHeight="65.0" prefWidth="210.0" styleClass="buttonAdd" text="ConformOrder" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="CHECK_SQUARE_ALT" size="25" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="717.0" layoutY="393.0" prefHeight="27.0" prefWidth="154.0" text="Total Amount" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="lblTotalAmount" focusColor="WHITE" layoutX="908.0" layoutY="377.0" onAction="#moveToAmountPaid" prefHeight="35.0" prefWidth="123.0" unFocusColor="WHITE">
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></JFXTextField>
+      <Label layoutX="880.0" layoutY="384.0" prefHeight="34.0" prefWidth="12.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="717.0" layoutY="448.0" prefHeight="27.0" prefWidth="154.0" text="Amount Paid" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAmountPaid" focusColor="WHITE" layoutX="909.0" layoutY="433.0" onAction="#amountPaidOnAction" prefHeight="35.0" prefWidth="123.0" unFocusColor="WHITE">
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></JFXTextField>
+      <Label layoutX="881.0" layoutY="445.0" prefHeight="34.0" prefWidth="12.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="716.0" layoutY="498.0" prefHeight="32.0" prefWidth="196.0" text="Remaining Balance" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtRemainingBalance" focusColor="WHITE" layoutX="909.0" layoutY="484.0" prefHeight="35.0" prefWidth="123.0" unFocusColor="WHITE">
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></JFXTextField>
+      <Label layoutX="881.0" layoutY="493.0" prefHeight="34.0" prefWidth="12.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

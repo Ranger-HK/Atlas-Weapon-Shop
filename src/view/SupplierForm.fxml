@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextSupplierForm" prefHeight="1000.0" prefWidth="1480.0" styleClass="anchor" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierFormController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1480.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/thomas-def-MfM3p2yn4Ew-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="238.0" layoutX="14.0" layoutY="178.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1453.0" />
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="100.0" layoutX="14.0" layoutY="9.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1454.0" />
+      <Label layoutX="503.0" layoutY="31.0" prefHeight="51.0" prefWidth="398.0" text="ATLAS WEAPON SHOP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSupplierId" focusColor="WHITE" labelFloat="true" layoutX="38.0" layoutY="199.0" onAction="#moveToSupplierName" onKeyReleased="#txtSupplierKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="Supplier Id" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupplierName" focusColor="WHITE" labelFloat="true" layoutX="346.0" layoutY="198.0" onAction="#moveToSupplierPayment" onKeyReleased="#txtSupplierKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="Supplier Name" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupplierPayment" focusColor="WHITE" labelFloat="true" layoutX="652.0" layoutY="198.0" onAction="#moveToItemQty" onKeyReleased="#txtSupplierKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="Supplier Payment" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemQty" focusColor="WHITE" labelFloat="true" layoutX="960.0" layoutY="198.0" onAction="#moveToItemPrice" onKeyReleased="#txtSupplierKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="Item Qty" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemPrice" focusColor="WHITE" labelFloat="true" layoutX="1265.0" layoutY="198.0" onAction="#moveToSupplyItem" onKeyReleased="#txtSupplierKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="Item Price" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupplyItem" focusColor="WHITE" labelFloat="true" layoutX="38.0" layoutY="293.0" onKeyReleased="#txtSupplierKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="Supply Item" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddItem" buttonType="RAISED" layoutX="845.0" layoutY="302.0" onAction="#btnAddOnAction" prefHeight="44.0" prefWidth="165.0" styleClass="buttonAdd" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="1059.0" layoutY="302.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="165.0" styleClass="buttonUpdate" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="1275.0" layoutY="301.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="165.0" styleClass="buttonDelete" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" alignment="CENTER" buttonType="RAISED" layoutX="627.0" layoutY="302.0" onAction="#btnClearOnAction" prefHeight="44.0" prefWidth="165.0" styleClass="buttonClear" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblSupplier" layoutX="13.0" layoutY="497.0" onMouseClicked="#MouseOnAction" prefHeight="485.0" prefWidth="1455.0">
+        <columns>
+          <TableColumn fx:id="colSupplierId" prefWidth="208.3333282470703" text="Supplier Id" />
+          <TableColumn fx:id="colSupplierName" prefWidth="301.6666717529297" text="Supplier Name" />
+            <TableColumn fx:id="colSupplierPayment" prefWidth="264.9999694824219" text="Supplier Payment" />
+            <TableColumn fx:id="colItemQty" prefWidth="216.3333740234375" text="Item Qty" />
+            <TableColumn fx:id="colItemPrice" prefWidth="220.6666259765625" text="Item Price" />
+            <TableColumn fx:id="colSupplyItem" prefWidth="245.00006103515625" text="Supply Item" />
+        </columns>
+      </TableView>
+      <Label layoutX="1276.0" layoutY="107.0" prefHeight="40.0" prefWidth="75.0" text="Time :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="112.0" prefHeight="30.0" prefWidth="75.0" text="Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="83.0" layoutY="110.0" prefHeight="34.0" prefWidth="270.0" text="06  . September. 2021" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1347.0" layoutY="107.0" prefHeight="40.0" prefWidth="124.0" text="00:00:00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextOrder" prefHeight="1000.0" prefWidth="1480.0" styleClass="anchor" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderFormController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1480.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/thomas-def-MfM3p2yn4Ew-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="238.0" layoutX="1151.0" layoutY="161.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="316.0" />
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="238.0" layoutX="15.0" layoutY="161.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1099.0" />
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="100.0" layoutX="14.0" layoutY="6.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1453.0" />
+      <Label layoutX="587.0" layoutY="27.0" prefHeight="51.0" prefWidth="398.0" text="ATLAS WEAPON SHOP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="1276.0" layoutY="99.0" prefHeight="40.0" prefWidth="67.0" text="Time :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="104.0" prefHeight="30.0" prefWidth="75.0" text="Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="82.0" layoutY="102.0" prefHeight="34.0" prefWidth="237.0" text="06  . September. 2021" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1346.0" layoutY="99.0" prefHeight="40.0" prefWidth="114.0" text="00:00:00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbItemId" focusColor="WHITE" labelFloat="true" layoutX="61.0" layoutY="186.0" prefHeight="31.0" prefWidth="174.0" promptText="Item Id" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXComboBox>
+      <JFXTextField fx:id="txtCategoryId" focusColor="WHITE" labelFloat="true" layoutX="328.0" layoutY="186.0" onAction="#moveToModelId" prefHeight="31.0" prefWidth="174.0" promptText="Category Id" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtModelId" focusColor="WHITE" labelFloat="true" layoutX="597.0" layoutY="186.0" onAction="#moveToPrice" prefHeight="31.0" prefWidth="174.0" promptText="Model Id" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtPrice" focusColor="WHITE" labelFloat="true" layoutX="864.0" layoutY="186.0" onAction="#moveToItemName" prefHeight="31.0" prefWidth="174.0" promptText="Price" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtItemName" focusColor="WHITE" labelFloat="true" layoutX="329.0" layoutY="280.0" onAction="#moveToQtyOnHand" prefHeight="31.0" prefWidth="174.0" promptText="Item Name" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtQtyOnHand" focusColor="WHITE" labelFloat="true" layoutX="597.0" layoutY="280.0" onAction="#moveToQuantity" prefHeight="31.0" prefWidth="174.0" promptText="Qty On Hand" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtQuantity" focusColor="WHITE" labelFloat="true" layoutX="865.0" layoutY="280.0" onKeyReleased="#txtManageUserKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="Quantity" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnAddToCart" alignment="CENTER" buttonType="RAISED" layoutX="1218.0" layoutY="192.0" onAction="#addToCartOnAction" prefHeight="44.0" prefWidth="182.0" styleClass="buttonAdd" text="Add To Cart" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1218.0" layoutY="254.0" onAction="#deleteOnAction" prefHeight="44.0" prefWidth="182.0" styleClass="buttonDelete" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="1299.0" layoutY="937.0" onAction="#orderBtnOnAction" prefHeight="44.0" prefWidth="165.0" styleClass="buttonAdd" text="Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1084.0" layoutY="937.0" onAction="#cancelOrderOnAction" prefHeight="44.0" prefWidth="165.0" styleClass="buttonDelete" text="Cancel Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblOrder" layoutX="13.0" layoutY="430.0" prefHeight="485.0" prefWidth="1455.0">
+        <columns>
+          <TableColumn fx:id="colItemId" prefWidth="151.33334350585938" text="Item Id" />
+          <TableColumn fx:id="colCategoryId" prefWidth="180.0" text="Category Id" />
+            <TableColumn fx:id="colModelId" prefWidth="190.66668701171875" text="Model Id" />
+            <TableColumn fx:id="colPrice" prefWidth="231.0" text="Price" />
+            <TableColumn fx:id="colItemName" prefWidth="274.3333740234375" text="Item Name" />
+            <TableColumn fx:id="colQuantity" prefWidth="203.0" text="Quantity" />
+            <TableColumn fx:id="colTotal" prefWidth="231.0" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="950.0" prefHeight="38.0" prefWidth="170.0" text="Total Amount :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="189.0" layoutY="955.0" prefHeight="32.0" prefWidth="441.0" text="00.00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="1218.0" layoutY="319.0" onAction="#addCustomerOnAction" prefHeight="44.0" prefWidth="182.0" styleClass="buttonAdd" text="Add Customers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

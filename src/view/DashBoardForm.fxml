@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextId" prefHeight="609.0" prefWidth="1062.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="609.0" layoutX="402.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="663.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#403b3b" />
+                  <Stop color="#12211d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="548.0" layoutY="454.0" onAction="#openLoginOnAction" prefHeight="73.0" prefWidth="371.0" styleClass="buttonAdd" text="&lt;&lt;&lt; START &gt;&gt;&gt;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="609.0" fitWidth="403.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/123.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="328.0" fitWidth="421.0" layoutX="570.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/0abdc23e0e69433494c9ec46c573bcaa%20(2).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

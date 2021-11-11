@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextAddCustomers" prefHeight="680.0" prefWidth="504.0" style="-fx-background-color: #403e46;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+   <children>
+      <JFXTextField fx:id="txtCustomerId" focusColor="WHITE" labelFloat="true" layoutX="65.0" layoutY="81.0" onAction="#moveToCustomerName" onKeyReleased="#txtCustomerKeyRelease" prefHeight="25.0" prefWidth="376.0" promptText="Customer Id" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="168.0" layoutY="11.0" text="ADD CUSTOMER" textFill="WHITE" underline="true" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerName" focusColor="WHITE" labelFloat="true" layoutX="64.0" layoutY="169.0" onAction="#moveToCustomerNic" onKeyReleased="#txtCustomerKeyRelease" prefHeight="25.0" prefWidth="376.0" promptText="Customer Name" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTelephoneNumber" focusColor="WHITE" labelFloat="true" layoutX="64.0" layoutY="348.0" onAction="#moveToAddress" onKeyReleased="#txtCustomerKeyRelease" prefHeight="25.0" prefWidth="376.0" promptText="TelephoneNumber" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerAddress" focusColor="WHITE" labelFloat="true" layoutX="64.0" layoutY="435.0" onAction="#moveToCustomerLicenseNumber" onKeyReleased="#txtCustomerKeyRelease" prefHeight="25.0" prefWidth="376.0" promptText="Customer Address" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerLicenseNumber" focusColor="WHITE" labelFloat="true" layoutX="64.0" layoutY="523.0" onKeyReleased="#txtCustomerKeyRelease" prefHeight="25.0" prefWidth="376.0" promptText="Customer License Number" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerNic" focusColor="WHITE" labelFloat="true" layoutX="64.0" layoutY="259.0" onAction="#moveToTelephoneNumber" onKeyReleased="#txtCustomerKeyRelease" prefHeight="25.0" prefWidth="376.0" promptText="Customer Nic" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddCustomer" alignment="CENTER" buttonType="RAISED" layoutX="160.0" layoutY="609.0" onAction="#addCustomerOnAction" prefHeight="39.0" prefWidth="184.0" styleClass="buttonClear" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

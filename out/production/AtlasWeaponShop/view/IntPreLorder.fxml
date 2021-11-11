@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="609.0" prefWidth="1062.0" style="-fx-background-color: #1abc9c;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IntPreLorder">
+   <children>
+      <Rectangle fill="#071b2c" height="609.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1062.0" />
+      <ImageView fitHeight="340.0" fitWidth="370.0" layoutX="359.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/0abdc23e0e69433494c9ec46c573bcaa%20(2).png" />
+         </image>
+      </ImageView>
+      <JFXProgressBar layoutX="274.0" layoutY="500.0" prefHeight="12.0" prefWidth="516.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="57.0" layoutX="214.0" layoutY="14.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="630.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="302.0" layoutY="17.0" prefHeight="51.0" prefWidth="454.0" text="ATLAS WEAPON SHOP">
+         <font>
+            <Font name="Roboto Black" size="30.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="BLACK" />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" height="19.0" layoutX="338.0" layoutY="87.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="410.0" />
+      <Label layoutX="352.0" layoutY="87.0" text="&quot;A Gun In The Hand Is Better Than A Cop On The Phone&quot;" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black" size="15.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" height="19.0" layoutX="349.0" layoutY="575.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="351.0" />
+      <Label layoutX="406.0" layoutY="575.0" text="2021 - 2021  -  All Rights Reserved" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black" size="15.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" height="19.0" layoutX="469.0" layoutY="541.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="115.0" />
+      <Label layoutX="479.0" layoutY="541.0" text="Version 1.0.0" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black" size="15.0" />
+         </font>
+      </Label>
+      <Circle fill="WHITE" layoutX="637.0" layoutY="453.0" radius="22.0" stroke="#ff1111" strokeType="INSIDE" strokeWidth="5.0" />
+      <Circle fill="WHITE" layoutX="427.0" layoutY="454.0" radius="22.0" stroke="#2fd79c" strokeType="INSIDE" strokeWidth="5.0" />
+      <Circle fill="WHITE" layoutX="532.0" layoutY="453.0" radius="22.0" stroke="#f8cc08" strokeType="INSIDE" strokeWidth="5.0" />
+      <Label fx:id="lblLoading" layoutX="274.0" layoutY="476.0" text="Loading" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black" size="15.0" />
+         </font>
+      </Label>
+      <ProgressIndicator layoutX="412.0" layoutY="439.0" prefHeight="31.0" prefWidth="30.0" />
+      <ProgressIndicator layoutX="517.0" layoutY="438.0" prefHeight="31.0" prefWidth="30.0" />
+      <ProgressIndicator layoutX="622.0" layoutY="438.0" prefHeight="31.0" prefWidth="30.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1480.0" styleClass="button" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShopAvailableItemsFormController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1480.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/thomas-def-MfM3p2yn4Ew-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1291.0" layoutY="115.0" prefHeight="40.0" prefWidth="66.0" text="Time :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="120.0" prefHeight="30.0" prefWidth="65.0" text="Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="90.0" layoutY="118.0" prefHeight="34.0" prefWidth="212.0" text="06  . September. 2021" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1362.0" layoutY="115.0" prefHeight="40.0" prefWidth="110.0" text="00:00:00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#403e46" height="536.0" layoutX="21.0" layoutY="202.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="467.0" />
+      <Label layoutX="44.0" layoutY="220.0" prefHeight="30.0" prefWidth="361.0" text="WEAPONS AND EXPLOSIVES " textFill="#ffeabb">
+         <font>
+            <Font name="Roboto Black" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="273.0" prefHeight="30.0" prefWidth="191.0" text="&gt; Assault Rifles" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="323.0" prefHeight="18.0" prefWidth="110.0" text="&gt; Rifles" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="298.0" prefHeight="30.0" prefWidth="136.0" text="&gt; Shotguns" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="418.0" prefHeight="30.0" prefWidth="165.0" text="&gt; Rimfire Rifles" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="444.0" prefHeight="30.0" prefWidth="159.0" text="&gt; Gas Guns" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="393.0" prefHeight="10.0" prefWidth="110.0" text="&gt; AirGuns" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="370.0" prefHeight="30.0" prefWidth="178.0" text="&gt; Handguns" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="471.0" prefHeight="30.0" prefWidth="164.0" text="&gt; Flobert Guns" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="496.0" prefHeight="30.0" prefWidth="212.0" text="&gt; Submachine Guns" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="346.0" prefHeight="30.0" prefWidth="180.0" text="&gt; Sniper Guns " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="524.0" prefHeight="17.0" prefWidth="110.0" text="&gt; Sa vz 58" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="581.0" prefHeight="30.0" prefWidth="231.0" text="&gt; Combat Knives" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="553.0" prefHeight="30.0" prefWidth="195.0" text="&gt; Machete Knives" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="369.0" prefHeight="30.0" prefWidth="186.0" text="&gt; Guns Magazines" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="346.0" prefHeight="30.0" prefWidth="159.0" text="&gt; Ammunition" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="396.0" prefHeight="30.0" prefWidth="178.0" text="&gt; Weapons Cases" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="419.0" prefHeight="30.0" prefWidth="185.0" text="&gt; Gun Cleaning" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="443.0" prefHeight="30.0" prefWidth="191.0" text="&gt; Other Equipment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="635.0" prefHeight="30.0" prefWidth="344.0" text="&gt; M67 Fragmentation Grenade" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="320.0" prefHeight="30.0" prefWidth="164.0" text="&gt; Mk2 Grenade" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="662.0" prefHeight="30.0" prefWidth="268.0" text="&gt; M84 Stun Grenade" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="709.0" prefHeight="30.0" prefWidth="278.0" text="&gt; M18 US Smoke Grenade" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="686.0" prefHeight="30.0" prefWidth="247.0" text="&gt; M7A2 CS Gas Grenade" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="273.0" prefHeight="30.0" prefWidth="178.0" text="&gt; M61 Grenade" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="297.0" prefHeight="30.0" prefWidth="180.0" text="&gt; C-4 explosive" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#403e46" height="536.0" layoutX="506.0" layoutY="202.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="467.0" />
+      <Label layoutX="520.0" layoutY="213.0" prefHeight="36.0" prefWidth="414.0" text="TRACTICAL EQUIPMENT &amp; OPTICS" textFill="#ffeabb">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="272.0" prefHeight="30.0" prefWidth="335.0" text="&gt; Impact Resistant Police Shield" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="295.0" prefHeight="30.0" prefWidth="301.0" text="&gt; Tactical Flashlights" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="320.0" prefHeight="30.0" prefWidth="317.0" text="&gt; Body Armour (Vest)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="496.0" prefHeight="30.0" prefWidth="328.0" text="&gt; Shielding Cases" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="448.0" prefHeight="30.0" prefWidth="335.0" text="&gt; Detection Mirror" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="422.0" prefHeight="30.0" prefWidth="290.0" text="&gt; Equipment For Training" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="345.0" prefHeight="30.0" prefWidth="278.0" text="&gt; Tactical Gloves" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="472.0" prefHeight="17.0" prefWidth="99.0" text="&gt; Belts" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="397.0" prefHeight="30.0" prefWidth="317.0" text="&gt; Palm-Sticks, Tactical Pens" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="371.0" prefHeight="30.0" prefWidth="290.0" text="&gt; Tactical Backpack" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="520.0" prefHeight="17.0" prefWidth="110.0" text="&gt; Masks" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="576.0" prefHeight="30.0" prefWidth="447.0" text="&gt; Scopes ( 2x ,6x ,10x , 8x ,Holo Grap,Dot Sight" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="548.0" prefHeight="30.0" prefWidth="387.0" text="&gt; Binoculars 7x50 , 8x30-56 , 9x 63 " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="605.0" prefHeight="30.0" prefWidth="356.0" text="&gt; Hunting Kits , Boots , Hats " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="609.0" prefHeight="30.0" prefWidth="278.0" text="&gt; Silencers &amp; Muzzle Brakes" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="633.0" prefHeight="17.0" prefWidth="178.0" text="&gt; Other Tracticals" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#ffffffb0" height="100.0" layoutX="20.0" layoutY="17.0" opacity="0.35" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1439.0" />
+      <Label layoutX="615.0" layoutY="40.0" prefHeight="51.0" prefWidth="398.0" text="ATLAS WEAPON SHOP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#403e46" height="536.0" layoutX="991.0" layoutY="202.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="467.0" />
+      <Label layoutX="1020.0" layoutY="213.0" prefHeight="36.0" prefWidth="344.0" text="BOWS &amp; CROSSBOWS" textFill="#ffeabb">
+         <font>
+            <Font name="Roboto Black" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="271.0" prefHeight="36.0" prefWidth="387.0" text="&gt; Compound Bow" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1019.0" layoutY="294.0" prefHeight="40.0" prefWidth="301.0" text="&gt; Bow Recurve" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1019.0" layoutY="317.0" prefHeight="45.0" prefWidth="356.0" text="&gt; Arrow Rest" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="531.0" prefHeight="17.0" prefWidth="121.0" text="&gt; Bolts" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="455.0" prefHeight="30.0" prefWidth="268.0" text="&gt; Crossbow Compound" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="426.0" prefHeight="36.0" prefWidth="365.0" text="&gt; Crosbow Recurve" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="345.0" prefHeight="45.0" prefWidth="301.0" text="&gt; Bow Sights" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="474.0" prefHeight="45.0" prefWidth="356.0" text="&gt; Repeating Crossbow" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="397.0" prefHeight="45.0" prefWidth="328.0" text="&gt; Crossbow Pistol" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="372.0" prefHeight="45.0" prefWidth="317.0" text="&gt; Arrows" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="498.0" prefHeight="45.0" prefWidth="290.0" text="&gt; Slingshots" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="559.0" prefHeight="17.0" prefWidth="317.0" text="&gt; Cables &amp; Strings" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="590.0" prefHeight="17.0" prefWidth="219.0" text="&gt; Crossbow Optics " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1019.0" layoutY="611.0" prefHeight="45.0" prefWidth="356.0" text="&gt; Bags and Cases" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1020.0" layoutY="638.0" prefHeight="45.0" prefWidth="335.0" text="&gt; Armguards" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="208.0" fitWidth="1447.0" layoutX="20.0" layoutY="776.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/asset.png" />
+         </image></ImageView>
+      <Separator layoutX="43.0" layoutY="253.0" prefHeight="5.0" prefWidth="357.0" />
+      <Separator layoutX="525.0" layoutY="251.0" prefHeight="7.0" prefWidth="414.0" />
+      <Separator layoutX="1022.0" layoutY="245.0" prefHeight="19.0" prefWidth="317.0" />
+   </children>
+   <padding>
+      <Insets bottom="-2.0" right="-50.0" />
+   </padding>
+</AnchorPane>

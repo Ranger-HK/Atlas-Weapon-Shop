@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1480.0" styleClass="anchor" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageUserFormController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1480.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/thomas-def-MfM3p2yn4Ew-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="238.0" layoutX="14.0" layoutY="178.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1453.0" />
+      <JFXTextField fx:id="txtUserName" focusColor="WHITE" labelFloat="true" layoutX="39.0" layoutY="199.0" onAction="#moveToName" onKeyReleased="#txtManageUserKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="UserName" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtName" focusColor="WHITE" labelFloat="true" layoutX="344.0" layoutY="198.0" onAction="#moveToUserPassword" onKeyReleased="#txtManageUserKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="Name" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtUserPassword" focusColor="WHITE" labelFloat="true" layoutX="647.0" layoutY="198.0" onAction="#moveToRole" onKeyReleased="#txtManageUserKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="UserPassword" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtRole" focusColor="WHITE" labelFloat="true" layoutX="951.0" layoutY="198.0" onAction="#moveToAddress" onKeyReleased="#txtManageUserKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="Role" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtAddress" focusColor="WHITE" labelFloat="true" layoutX="1256.0" layoutY="198.0" onKeyReleased="#txtManageUserKeyRelease" prefHeight="31.0" prefWidth="174.0" promptText="Address" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="847.0" layoutY="301.0" onAction="#saveUserOnAction" prefHeight="44.0" prefWidth="165.0" styleClass="buttonAdd" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <TableView fx:id="tblMangeUser" layoutX="13.0" layoutY="497.0" onMouseClicked="#MouseOnAction" prefHeight="485.0" prefWidth="1455.0">
+        <columns>
+          <TableColumn fx:id="colUserName" prefWidth="236.33334350585938" text="User Name" />
+          <TableColumn fx:id="colName" prefWidth="329.66668701171875" text="Name" />
+            <TableColumn fx:id="colUserPassword" prefWidth="291.33331298828125" text="User Password" />
+            <TableColumn fx:id="colRole" prefWidth="275.33331298828125" text="Role" />
+            <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="324.3333740234375" text="Address" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="1060.0" layoutY="301.0" onAction="#updateOnAction" prefHeight="44.0" prefWidth="165.0" styleClass="buttonUpdate" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="1274.0" layoutY="301.0" onAction="#deleteOnAction" prefHeight="44.0" prefWidth="165.0" styleClass="buttonDelete" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="1276.0" layoutY="106.0" prefHeight="40.0" prefWidth="68.0" text="Time :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="100.0" layoutX="14.0" layoutY="9.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1454.0" />
+      <Label layoutX="575.0" layoutY="34.0" prefHeight="51.0" prefWidth="398.0" text="ATLAS WEAPON SHOP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="111.0" prefHeight="32.0" prefWidth="68.0" text="Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="81.0" layoutY="109.0" prefHeight="34.0" prefWidth="252.0" text="06  . September. 2021" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1347.0" layoutY="106.0" prefHeight="40.0" prefWidth="129.0" text="00:00:00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="632.0" layoutY="301.0" onAction="#clearOnAction" prefHeight="44.0" prefWidth="165.0" styleClass="buttonClear" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

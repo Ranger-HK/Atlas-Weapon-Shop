@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="615.0" prefWidth="1040.0" styleClass="background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashBoardFormController">
+   <children>
+      <AnchorPane fx:id="contextDashBoard" layoutX="379.0" prefHeight="1000.0" prefWidth="1480.0" styleClass="button" stylesheets="@../style/style.css" />
+      <ToggleButton fx:id="btnUserManage" contentDisplay="TOP" layoutX="7.0" layoutY="710.0" mnemonicParsing="false" onAction="#userManageOnAction" prefHeight="120.0" prefWidth="366.0" stylesheets="@../style/style.css" text="User Manage">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="USER" size="40" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="tbtn" />
+            <String fx:value="glyph-icon" />
+         </styleClass>
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleBtnList" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="btnAddItem" contentDisplay="TOP" layoutX="7.0" layoutY="118.0" mnemonicParsing="false" onAction="#addItemOnAction" prefHeight="120.0" prefWidth="366.0" stylesheets="@../style/style.css" text="Add Item" toggleGroup="$toggleBtnList">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <FontAwesomeIconView fill="#0d0d0d" glyphName="PLUS" size="40" />
+         </graphic>
+         <styleClass>
+            <String fx:value="tbtn" />
+            <String fx:value="glyph-icon" />
+         </styleClass>
+      </ToggleButton>
+      <ToggleButton fx:id="btnLogOut" contentDisplay="TOP" layoutX="7.0" layoutY="857.0" mnemonicParsing="false" onAction="#logOutOnAction" prefHeight="120.0" prefWidth="366.0" stylesheets="@../style/style.css" text="Log Out" toggleGroup="$toggleBtnList">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <FontAwesomeIconView glyphName="SIGN_OUT" size="40" />
+         </graphic>
+         <styleClass>
+            <String fx:value="tbtn" />
+            <String fx:value="glyph-icon" />
+         </styleClass>
+      </ToggleButton>
+      <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="7.0" layoutY="21.0" prefHeight="68.0" prefWidth="366.0" styleClass="tbtn" text="ADMIN DASHBOARD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ToggleButton fx:id="btnAddCategoryAndModel" contentDisplay="TOP" layoutX="7.0" layoutY="265.0" mnemonicParsing="false" onAction="#addCategoryAndModelOnAction" prefHeight="120.0" prefWidth="366.0" stylesheets="@../style/style.css" text="Add Category &amp; Model" toggleGroup="$toggleBtnList">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <FontAwesomeIconView glyphName="EDIT" size="40" />
+         </graphic>
+         <styleClass>
+            <String fx:value="tbtn" />
+            <String fx:value="glyph-icon" />
+         </styleClass>
+      </ToggleButton>
+      <ToggleButton fx:id="btnSupplier" contentDisplay="TOP" layoutX="7.0" layoutY="414.0" mnemonicParsing="false" onAction="#supplierOnAction" prefHeight="120.0" prefWidth="366.0" stylesheets="@../style/style.css" text="Supplier" toggleGroup="$toggleBtnList">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <FontAwesomeIconView glyphName="TRUCK" size="40" />
+         </graphic>
+         <styleClass>
+            <String fx:value="tbtn" />
+            <String fx:value="glyph-icon" />
+         </styleClass>
+      </ToggleButton>
+      <ToggleButton fx:id="btnSystemReport" contentDisplay="TOP" layoutX="7.0" layoutY="562.0" mnemonicParsing="false" onAction="#systemReportOnAction" prefHeight="120.0" prefWidth="366.0" stylesheets="@../style/style.css" text="System Report" toggleGroup="$toggleBtnList">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <FontAwesomeIconView glyphName="AREA_CHART" size="40" />
+         </graphic>
+         <styleClass>
+            <String fx:value="tbtn" />
+            <String fx:value="glyph-icon" />
+         </styleClass>
+      </ToggleButton>
+   </children>
+</AnchorPane>

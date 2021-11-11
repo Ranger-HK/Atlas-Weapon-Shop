@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1859.0" styleClass="background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HelperDashBoardController">
+   <children>
+      <AnchorPane fx:id="contextHelperDashBoard" layoutX="379.0" prefHeight="1000.0" prefWidth="1480.0" styleClass="button" stylesheets="@../style/style.css" />
+      <ToggleButton fx:id="btnAvailableItems" contentDisplay="TOP" layoutX="7.0" layoutY="133.0" mnemonicParsing="false" onAction="#btnAvailableItemsOnAction" prefHeight="120.0" prefWidth="366.0" styleClass="tbtn" text="All Items">
+         <graphic>
+            <FontAwesomeIconView glyphName="LIST" size="40" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleable" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="btnOrder" contentDisplay="TOP" layoutX="7.0" layoutY="422.0" mnemonicParsing="false" onAction="#btnOrderOnAction" prefHeight="120.0" prefWidth="366.0" styleClass="tbtn" text="Orders" toggleGroup="$toggleable">
+         <graphic>
+            <FontAwesomeIconView glyphName="SHOPPING_CART" size="40" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+      <ToggleButton fx:id="btnTrainingGround" contentDisplay="TOP" layoutX="7.0" layoutY="708.0" mnemonicParsing="false" onAction="#btnTrainingGroundOnAction" prefHeight="120.0" prefWidth="366.0" styleClass="tbtn" text="Training Ground" toggleGroup="$toggleable">
+         <graphic>
+            <FontAwesomeIconView glyphName="BINOCULARS" size="40" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+      <ToggleButton fx:id="btnLogOut" contentDisplay="TOP" layoutX="6.0" layoutY="851.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" prefHeight="120.0" prefWidth="366.0" styleClass="tbtn" text="Log Out" toggleGroup="$toggleable">
+         <graphic>
+            <FontAwesomeIconView glyphName="SIGN_OUT" size="40" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+      <Label alignment="CENTER" layoutX="7.0" layoutY="27.0" prefHeight="68.0" prefWidth="366.0" styleClass="tbtn" text="HELPER DASHBOARD">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ToggleButton fx:id="btnAvailableAllItems" contentDisplay="TOP" layoutX="7.0" layoutY="278.0" mnemonicParsing="false" onAction="#AvailableAllItemsOnAction" prefHeight="120.0" prefWidth="366.0" styleClass="tbtn" text="Available Items" toggleGroup="$toggleable">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="REORDER" size="40" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+      <ToggleButton fx:id="btnRecord" contentDisplay="TOP" layoutX="7.0" layoutY="566.0" mnemonicParsing="false" onAction="#recordOnAction" prefHeight="120.0" prefWidth="366.0" styleClass="tbtn" text="Records" toggleGroup="$toggleable">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="HISTORY" size="40" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+   </children>
+</AnchorPane>

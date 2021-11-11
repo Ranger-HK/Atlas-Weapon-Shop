@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextCategoryAndModel" prefHeight="1000.0" prefWidth="1480.0" styleClass="anchor" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCategoryAndModelController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1480.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/thomas-def-MfM3p2yn4Ew-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="100.0" layoutX="11.0" layoutY="7.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1456.0" />
+      <Label layoutX="1264.0" layoutY="117.0" prefHeight="40.0" prefWidth="64.0" text="Time :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+            <Label layoutX="560.0" layoutY="33.0" prefHeight="51.0" prefWidth="398.0" text="ATLAS WEAPON SHOP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="122.0" prefHeight="30.0" prefWidth="64.0" text="Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="80.0" layoutY="120.0" prefHeight="34.0" prefWidth="263.0" text="06  - September - 2021" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1348.0" layoutY="117.0" prefHeight="40.0" prefWidth="125.0" text="00:00:00 " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#403e46" height="699.0" layoutX="11.0" layoutY="245.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="699.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#403e46" height="699.0" layoutX="767.0" layoutY="244.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="699.0" />
+      <Label layoutX="283.0" layoutY="269.0" text="CATEGORIES" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1064.0" layoutY="269.0" text="MODELS" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCategoryId" focusColor="WHITE" labelFloat="true" layoutX="183.0" layoutY="329.0" onAction="#moveToCategoryName" onKeyReleased="#txtCategoryKeyRelease" prefHeight="50.0" prefWidth="361.0" promptText="Catecory Id" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCategoryName" focusColor="WHITE" labelFloat="true" layoutX="183.0" layoutY="406.0" onKeyReleased="#txtCategoryKeyRelease" prefHeight="50.0" prefWidth="361.0" promptText="Category Name" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddCategory" buttonType="RAISED" layoutX="128.0" layoutY="539.0" onAction="#btnAddCategoryOnAction" prefHeight="50.0" prefWidth="192.0" style="-fx-background-radius: 6;" styleClass="buttonAdd" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnRemoveCategory" buttonType="RAISED" layoutX="409.0" layoutY="539.0" onAction="#btnRemoveCategoryOnAction" prefHeight="50.0" prefWidth="192.0" style="-fx-background-radius: 6;" styleClass="buttonDelete" text="REMOVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtModelId" focusColor="WHITE" labelFloat="true" layoutX="934.0" layoutY="329.0" onAction="#moveToModelName" onKeyReleased="#txtModelKeyRelease" prefHeight="50.0" prefWidth="361.0" promptText="Model Id" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtModelName" focusColor="WHITE" labelFloat="true" layoutX="934.0" layoutY="406.0" onKeyReleased="#txtModelKeyRelease" prefHeight="50.0" prefWidth="361.0" promptText="Model Name" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddModel" buttonType="RAISED" layoutX="879.0" layoutY="539.0" onAction="#btnAddModelOnAction" prefHeight="50.0" prefWidth="192.0" style="-fx-background-radius: 6;" styleClass="buttonAdd" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnRemoveModels" buttonType="RAISED" layoutX="1160.0" layoutY="539.0" onAction="#btnRemoveModelOnAction" prefHeight="50.0" prefWidth="193.0" style="-fx-background-radius: 6;" styleClass="buttonDelete" text="REMOVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblCategory" layoutX="27.0" layoutY="611.0" prefHeight="315.0" prefWidth="669.0">
+        <columns>
+          <TableColumn fx:id="colCategoryId" prefWidth="319.0" text="Category Id" />
+          <TableColumn fx:id="colCategoryName" prefWidth="349.0" text="Category Name" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblModel" layoutX="783.0" layoutY="611.0" prefHeight="315.0" prefWidth="669.0">
+         <columns>
+            <TableColumn fx:id="colModelId" prefWidth="311.00006103515625" text="Model Id" />
+            <TableColumn fx:id="colModelName" prefWidth="356.99993896484375" text="Model Name" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

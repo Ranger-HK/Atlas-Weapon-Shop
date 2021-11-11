@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextLogin" prefHeight="609.0" prefWidth="1065.0" style="-fx-background-color: #BBD2C5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="WHITE" height="443.0" layoutX="402.0" layoutY="37.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="579.0" />
+      <JFXTextField fx:id="userNameContext" focusColor="BLACK" labelFloat="true" layoutX="526.0" layoutY="124.0" onAction="#goToPasswordOnAction" prefHeight="31.0" prefWidth="388.0" promptText="UserName" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordContext" alignment="TOP_LEFT" focusColor="BLACK" labelFloat="true" layoutX="526.0" layoutY="243.0" prefHeight="31.0" prefWidth="388.0" promptText="Password" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="590.0" layoutY="344.0" onAction="#openAdminOrHelperForm" prefHeight="40.0" prefWidth="203.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 12;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="456.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-customer-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="51.0" layoutX="461.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-password-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="609.0" fitWidth="320.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/pexels-nur-andi-ravsanjani-gusma-3678429.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="464.0" prefHeight="41.0" prefWidth="130.0" text="ATLAS">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.2761904761904762" endY="0.3380952380952381" startY="0.40476190476190477">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <SepiaTone>
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow height="2.96" radius="0.9824999999999999" width="2.97" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </SepiaTone>
+         </effect>
+      </Label>
+      <Label layoutX="142.0" layoutY="519.0" prefHeight="41.0" prefWidth="163.0" text="WEAPON SHOP">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.2761904761904762" endY="0.3380952380952381" startY="0.40476190476190477">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <SepiaTone>
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input></SepiaTone>
+         </effect>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="340.0" layoutY="521.0" prefHeight="51.0" prefWidth="707.0" style="-fx-background-radius: 12; -fx-background-color: #ecf0f1;" text="FORGOT PASSWORD ?" textFill="#248a64">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Separator layoutX="60.0" layoutY="506.0" prefHeight="8.0" prefWidth="122.0">
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Separator>
+      <Separator layoutX="141.0" layoutY="549.0" prefHeight="8.0" prefWidth="170.0">
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Separator>
+   </children>
+</AnchorPane>

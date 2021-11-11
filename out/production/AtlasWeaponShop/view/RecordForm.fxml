@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1480.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RecordFormController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1480.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/thomas-def-MfM3p2yn4Ew-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="12.0" arcWidth="12.0" fill="#403e46" height="100.0" layoutX="13.0" layoutY="19.0" opacity="0.76" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1452.0" />
+      <Label layoutX="538.0" layoutY="44.0" prefHeight="51.0" prefWidth="398.0" text="ATLAS WEAPON SHOP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="1294.0" layoutY="130.0" prefHeight="40.0" prefWidth="67.0" text="Time :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="135.0" prefHeight="30.0" prefWidth="75.0" text="Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="78.0" layoutY="133.0" prefHeight="34.0" prefWidth="264.0" text="06  . September. 2021" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1365.0" layoutY="130.0" prefHeight="40.0" prefWidth="110.0" text="00:00:00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblRecord" layoutX="18.0" layoutY="440.0" prefHeight="516.0" prefWidth="1445.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="217.0" text="Order Id" />
+            <TableColumn fx:id="colItemId" prefWidth="237.0" text="Item Id" />
+            <TableColumn fx:id="colCustomerId" prefWidth="237.33331298828125" text="Customer Id" />
+            <TableColumn fx:id="colOrderQty" prefWidth="250.0" text="Order Qty" />
+            <TableColumn fx:id="colOrderDate" prefWidth="253.3333740234375" text="Order Date" />
+            <TableColumn fx:id="colTotal" prefWidth="248.0" text="Total" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#d0d3ffa1" height="86.0" layoutX="907.0" layoutY="217.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="552.0" />
+      <JFXTextField fx:id="txtSearch" focusColor="WHITE" labelFloat="true" layoutX="930.0" layoutY="246.0" onKeyReleased="#searchOnAction" prefHeight="35.0" prefWidth="423.0" promptText="Search" unFocusColor="WHITE" />
+      <ImageView fitHeight="68.0" fitWidth="67.0" layoutX="1371.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/noun_Search_967615.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
